@@ -10,15 +10,20 @@ Main code for an Arduino based Nixie clock. Features:
   - Digit fading with configurable fade length                                  
   - Digit scrollback with configurable scroll speed                             
   - Configuration stored in EEPROM                                              
-  - Low hardware component count (as much as possible done in code)             
-  - Single button operation with software debounce                              
+  - Low hardware component count (as much as possible done in code)                                           
   - Single 74141 for digit display (other versions use 2 or even 6!)            
   - Highly modular code                                                         
   - RGB Back lighting                                                           
-  - Automatic dimming using light sensor                                        
-                                                                                
-  isparkes@protonmail.ch                                                        
-                                                                                
+  - Automatic dimming using light sensor
+  - Single button configuration
+  - Manual blanking override (Default, always on, always off)
+  - IR remote control
+  - Standalone configurable input control board through analog Arduino input pin
+  
+  Original code by **Ian**
+  isparkes@protonmail.ch
+  
+  Modded by **KN_Shrug**                                                                               
 
 ardunixFade9_6_digit.ino: Main code for the 6 Digit Nixie Clock<br>
 
@@ -33,11 +38,11 @@ You can buy this from:
 **Construction and prototyping:** 
 
 hvTest.ino: code for testing the HV generation
-buttonTest.ino: Code for testing button presses
+inputControl.ino: standalone input board code
 
 YouTube video of version 42 of the clock in action:
 
-https://youtu.be/9lNWKlWbXSg
+    https://youtu.be/9lNWKlWbXSg
 
 YouTube video of an early version of the clock in action:
 
